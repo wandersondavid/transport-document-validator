@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+  <xs:element name="CTS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:string"/>
+        <xs:element name="issueDate" type="xs:date"/>
+        <xs:element name="sender" type="xs:string"/>
+        <xs:element name="recipient" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="versao" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
